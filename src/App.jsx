@@ -13,7 +13,7 @@ function App() {
   const [showSuggestions, setShowSuggestions] = useState(false);
   const [hoveredSuggestion, setHoveredSuggestion] = useState("");
 
-  const API_KEY = import.meta.env.VITE_WEATHER_API_KEY; // stored in .env
+  const API_KEY = import.meta.env.VITE_WEATHER_API_KEY; // stored in .env and used VITE_ prefix before my api key
 
   // Cities database
   const cities = [
