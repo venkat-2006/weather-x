@@ -7,9 +7,18 @@
 }
 
 body {
-  background: linear-gradient(135deg, #74ebd5, #9face6);
+  background: linear-gradient(135deg, #0f2027, #2c5364, #1f0036, #3a0ca3, #7209b7);
+  background-size: 300% 300%;
+  animation: shine 10s ease infinite;
   min-height: 100vh;
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Shining effect */
+@keyframes shine {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
 }
